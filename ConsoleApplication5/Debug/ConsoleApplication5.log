@@ -1,0 +1,36 @@
+﻿  main.cpp
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(122): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(127): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(129): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(354): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(361): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(366): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(368): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(400): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(405): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(410): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(412): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(981): warning C4018: “<=”: 有符号/无符号不匹配
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(986): warning C4018: “<=”: 有符号/无符号不匹配
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1092): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1264): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1271): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1276): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1278): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1307): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1312): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1317): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1319): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1570): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1577): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1582): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1584): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1612): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1617): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1622): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1624): warning C4244: “=”: 从“time_t”转换到“long”，可能丢失数据
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1862): warning C4018: “<=”: 有符号/无符号不匹配
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(2001): warning C4018: “<=”: 有符号/无符号不匹配
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(2126): warning C4715: “writeText”: 不是所有的控件路径都返回值
+c:\users\12492\desktop\consoleapplication5\consoleapplication5\consoleapplication5\unixfilesystem.h(1065): warning C4717: “commandDispatcher”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+  ConsoleApplication5.vcxproj -> C:\Users\12492\Desktop\ConsoleApplication5\ConsoleApplication5\Debug\ConsoleApplication5.exe

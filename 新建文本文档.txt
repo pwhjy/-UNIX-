@@ -1,0 +1,103 @@
+int touch(iNode* parent, char name[MAX_NAME_SIZE])	//创建文件
+{
+	bool exist = checkFileName(name);
+	if (parent->dINode.fileSize == 0 && parent->dINode.mod != 12 && !exist && (parent->dINode.ownerId == curOwner->ownerId || curOwner->ownerId == ROOT))
+	{
+		int blockId = getFreeBlock();
+		if (blockId < 0)
+			return blockId;
+		else
+		{
+			int iNodeId = getFreeINode();
+			if (iNodeId < 0)
+				return iNodeId;
+			else
+			{
+				parent->dINode.fileSize = sizeof(dir);
+				time_t now;
+				now = time(NULL);
+				parent->dINode.modifyTime = now;
+				parent->dINode.addr[0] = blockId;
+				writeINode(parent);		//更新parent iNode节点
+				direct *dt = new direct();	//新建一个目录项
+				strcpy(dt->name, name);
+				dt->iNodeId = iNodeId;
+				dINode *di = new dINode();	//新建一个dINode
+				di->createTime = now;
+				di->fileSize = 0;
+				di->groupId = parent->dINode.groupId;
+				di->linkNum = 0;
+				di->mod = 6;
+				di->modifyTime = now;
+				di->ownerId = parent->dINode.ownerId;
+				di->readTime = now;
+				iNode i;
+				i.dINode = *di;
+				i.nodeId = iNodeId;
+				i.parent = parent;
+				i.users = parent->users;
+				writeINode(&i);		//更新创建的目录的iNode节点
+				dir	dd;
+				dd.dirNum = 1;
+				dd.direct[0] = *dt;
+				writeDir(blockId, &dd);	//指定block写入目录结构
+				//delete dd;
+				*d = dd;
+				delete di;
+				delete dt;
+				return STATUS_OK;
+			}
+		}
+	}
+	else if (parent->dINode.fileSize != 0 && parent->dINode.mod != 12 && !exist && (parent->dINode.ownerId == curOwner->ownerId || curOwner->ownerId == ROOT))
+		{
+			int iNodeId = getFreeINode();
+			if (iNodeId < 0)
+				return iNodeId;
+			else
+			{
+				time_t now;
+				now = time(NULL);
+				parent->dINode.modifyTime = now;
+				direct *dt = new direct();	//新建一个目录项
+				strcpy(dt->name, name);
+				dt->iNodeId = iNodeId;
+				dINode *di = new dINode();	//新建一个dINode
+				di->createTime = now;
+				di->fileSize = 0;
+				di->groupId = parent->dINode.groupId;
+				di->linkNum = 0;
+				di->mod = 6;
+				di->modifyTime = now;
+				di->ownerId = parent->dINode.ownerId;
+				di->readTime = now;
+				iNode i;
+				i.dINode = *di;
+				i.nodeId = iNodeId;
+				i.parent = parent;
+				i.users = parent->users;
+				writeINode(&i);
+				dir dd;
+				readDir(parent->dINode.addr[0], &dd);
+				if (dd.dirNum < MAX_DIRECT_NUM)
+				{
+					dd.direct[dd.dirNum] = *dt;
+					dd.dirNum++;
+					writeDir(parent->dINode.addr[0], &dd);
+					*d = dd;
+					delete di;
+					delete dt;
+					return STATUS_OK;
+				}
+				else
+					return STATUS_BEYOND_DIRECT_NUM;
+			}
+		}
+		else if (parent->dINode.ownerId != curOwner->ownerId&&curOwner->ownerId != ROOT)
+			return STATUS_BEYOND_RIGHT;
+		else if (parent->dINode.mod == 12)
+			return STATUS_READ_ONLY;
+		else if (exist)
+			return STATUS_FILENAME_EXIST;
+	return STATUS_ERROR;
+}
