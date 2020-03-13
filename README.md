@@ -60,5 +60,5 @@ c)	….. <br>
 
 ### 三、	实验设计 <br>
 **系统流程<br>**
-https://github.com/pwhjy/-UNIX-/raw/master/ConsoleApplication5/img.jpg
+![](https://github.com/pwhjy/-UNIX-/raw/master/ConsoleApplication5/img.jpg)
 
