@@ -58,7 +58,4 @@ c)	….. <br>
 >**系统操作环境：Win10 <br>**
 >**系统开发工具：Visual Studio 2017 <br>**
 
-### 三、	实验设计 <br>
-**系统流程<br>**
->![](https://github.com/pwhjy/-UNIX-/raw/master/ConsoleApplication5/img.jpg)
 
